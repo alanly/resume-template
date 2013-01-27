@@ -90,10 +90,18 @@
         </style>
 
         <style type="text/css" media="print">
+            * {
+                -webkit-text-stroke: 0 !important;
+            }
+
             body {
                 background-color: #fff;
                 color: #000;
-                -webkit-text-stroke: 0;
+                font-size: 11px;
+            }
+
+            a[href]:after {
+                content: "";
             }
 
             #topics {
